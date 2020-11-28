@@ -9,21 +9,27 @@ const SideBar = ({ navigation, user }) => {
 
   let routes = [];
 
-  const loggedInRoutes = ['Dashboard', 'Logout'];
-  const nonLoggedInRoutes = ['Login'];
+  const loggedInRoutes = ['Dashboard', 'Detect', 'History', 'Logout'];
+  const nonLoggedInRoutes = ['Login', 'Registration'];
   const [updatedRoutes, setUpdatedRoutes] = useState([]);
   useEffect(() => {
     const routes = [
       {
         type: 'AntDesign',
         icon: 'home',
-        label: 'Dashboard',
+        label: 'Home',
         name: 'Dashboard',
       }, {
         type: 'AntDesign',
         icon: 'login',
         label: 'Login',
         name: 'Login',
+      },
+      {
+        type: 'AntDesign',
+        icon: 'adduser',
+        label: 'Registration',
+        name: 'Registration',
       },
       {
         type: 'AntDesign',

@@ -1,5 +1,6 @@
 import axiosApi from '../axios';
 import { Toast } from 'native-base';
+import { navigate } from '../utils/RootNavigation';
 import {
   setAuthToken,
   removeAuthToken,

@@ -85,11 +85,12 @@ export default StyleSheet.create({
     imageEditIcon: {
         padding: 3,
         position: "absolute",
-        bottom: 0,
-        width: 22,
-        height: 22,
-        right: 0,
-        backgroundColor: "#035703",
+        top: 50,
+        width: 60,
+        height: 60,
+        alignItems: 'center',
+        alignSelf: 'center',
+        backgroundColor: "#3AA964",
         borderRadius: 50
     },
     errorMessage: {

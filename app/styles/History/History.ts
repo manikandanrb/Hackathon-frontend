@@ -4,6 +4,14 @@ export default StyleSheet.create({
     container: {
         flexDirection: 'row',
         alignContent: 'stretch',
+        marginTop: 20,
+    },
+    HeaderContainer: {
+        flexDirection: 'row',
+        alignContent: 'stretch',
+        marginLeft: 30,
+        marginTop: 30,
+        marginRight: 30,
     },
     item: {
         width: '100%',

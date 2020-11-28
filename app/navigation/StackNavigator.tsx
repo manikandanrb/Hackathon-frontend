@@ -8,6 +8,8 @@ import DashboardScreen from '../screens/Dashboard';
 import Logout from '../screens/Logout';
 import HistoryScreen from '../screens/History';
 import DetectScreen from '../screens/Detect';
+import DetectDetailScreen from '../screens/DetectDetails';
+import Registration from '../screens/Registration';
 
 const Stack = createStackNavigator();
 
@@ -65,8 +67,16 @@ const StackNavigator = () => {
         component={DetectScreen}
         options={options}>
       </Stack.Screen>
+      <Stack.Screen name='Detect Details'
+        component={DetectDetailScreen}
+        options={options}>
+      </Stack.Screen>
       <Stack.Screen name='Login'
         component={LoginScreen}
+        options={options}>
+      </Stack.Screen>
+      <Stack.Screen name='Registration'
+        component={Registration}
         options={options}>
       </Stack.Screen>
       <Stack.Screen name='Logout'

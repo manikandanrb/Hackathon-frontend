@@ -12,7 +12,7 @@ const DashboardScreen = ({ navigation, user }) => {
   }
 
   useEffect(() => {
-    navigation.setOptions({ title: 'Dashboard' });
+    navigation.setOptions({ title: 'Home' });
   }, [user])
 
   return (
@@ -21,7 +21,7 @@ const DashboardScreen = ({ navigation, user }) => {
         <Content>
           <View style={{ marginTop: 30, marginBottom: 20 }}>
             <Text style={Dashboad.contentText}>
-              Hello, <Text style={{ color: '#3AA964', fontSize: 25 }}>{user ? capitalize(user.name) : 'New User'}</Text>
+              Hello <Text style={{ color: '#3AA964', fontSize: 25 }}>{user ? capitalize(user.name) : 'New User'}!</Text>
             </Text>
           </View>
           <View style={Dashboad.container}>

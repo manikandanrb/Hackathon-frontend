@@ -1,3 +1,3 @@
 export default {
-    baseUrl: 'http://10.0.2.2:8000/api/v1/'
+    baseUrl: 'http://3.88.167.168/api/v1/'
 }

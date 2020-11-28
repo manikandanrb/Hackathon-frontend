@@ -19,6 +19,7 @@ const UploadPhoto = (props) => {
           paddingVertical: 30,
           width: 300,
           height: 170,
+          opacity: props.photo ? 1 : 0.5,
           borderRadius: props.borderRadius
         }}
         resizeMode='cover'
@@ -26,9 +27,13 @@ const UploadPhoto = (props) => {
           uri: props.photo ? props.photo : emptyImage
         }}
       />
-      <View style={PreLoginForm.imageEditIcon}>
-        <Icon active type='MaterialIcons' name='edit' style={{ marginLeft: 1, fontSize: 13, color: '#fff' }} />
-      </View>
+      {
+        !props.photo ? (
+          <View style={PreLoginForm.imageEditIcon}>
+            <Icon active type='AntDesign' name='clouduploado' style={{ marginLeft: 1, fontSize: 50, color: '#fff' }} />
+          </View>
+        ) : null
+      }
     </PhotoUpload>
   )
 }
