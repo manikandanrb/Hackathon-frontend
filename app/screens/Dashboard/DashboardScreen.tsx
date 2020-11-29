@@ -12,7 +12,7 @@ const DashboardScreen = ({ navigation, user }) => {
   }
 
   useEffect(() => {
-    navigation.setOptions({ title: 'Home' });
+    navigation.setOptions({ title: 'Expression Evaluator' });
   }, [user])
 
   return (
@@ -32,7 +32,7 @@ const DashboardScreen = ({ navigation, user }) => {
                     <Icon type="AntDesign" name="find" style={{ color: "#ffffff", fontSize: 60 }} />
                   </View>
                   <Text style={Dashboad.cardText}>
-                    Detect
+                    Evaluate
                   </Text>
                 </Card>
               </TouchableOpacity>

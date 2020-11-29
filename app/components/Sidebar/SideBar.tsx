@@ -34,7 +34,7 @@ const SideBar = ({ navigation, user }) => {
       {
         type: 'AntDesign',
         icon: 'find',
-        label: 'Detect',
+        label: 'Evaluate',
         name: 'Detect',
       },
       {

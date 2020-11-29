@@ -20,7 +20,7 @@ const DetectDetailScreen = ({
       setDetect(detectData);
     }
     navigation.setOptions({
-      title: 'Detect Details',
+      title: 'Evaluate Details',
       headerLeft: () => (<HeaderBackButton tintColor='#fff' onPress={() => navigation.navigate('History')} />),
     });
   }, [route.params])

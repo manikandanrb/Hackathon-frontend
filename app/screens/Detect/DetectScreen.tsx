@@ -68,7 +68,7 @@ const DetectScreen = ({ navigation, onPostDetectHandwritten, handwrittenDetect }
     validateValues(values);
     requestCameraPermission();
     navigation.setOptions({
-      title: 'Detect',
+      title: 'Evaluate',
       headerLeft: () => (<HeaderBackButton tintColor='#fff' onPress={() => navigation.navigate('Dashboard')} />),
     });
   }, []);
@@ -127,7 +127,7 @@ const DetectScreen = ({ navigation, onPostDetectHandwritten, handwrittenDetect }
           <View style={{ marginBottom: 25 }}>
             <InputWithIcon
               placeholder='Name'
-              icon='home'
+              icon='user'
               name='name'
               value={values.name}
               error={errors.name}
