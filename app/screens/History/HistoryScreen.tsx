@@ -69,11 +69,11 @@ const HistoryScreen = ({ navigation, onGetDetectHandwritten, handwrittenDetect }
                   <Col>
                     <View style={{ position: 'relative', padding: 5 }}>
                       <View style={{ margin: 10 }}>
-                        <Text style={{ fontWeight: 'bold', fontSize: 17, marginBottom: 5 }}>Name</Text>
+                        <Text style={{ fontWeight: 'bold', fontSize: 15, marginBottom: 5 }}>Name</Text>
                         <Text>{item.name}</Text>
                       </View>
                       <View style={{ margin: 10 }}>
-                        <Text style={{ fontWeight: 'bold', fontSize: 17, marginBottom: 5 }}>Image Processing Status</Text>
+                        <Text style={{ fontWeight: 'bold', fontSize: 15, marginBottom: 5 }}>Image Processing Status</Text>
                         <View style={{ flex: 1, flexDirection: 'row' }}>
                           <View style={{
                             width: 12,
