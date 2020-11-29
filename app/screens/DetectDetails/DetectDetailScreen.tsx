@@ -54,7 +54,7 @@ const DetectDetailScreen = ({
               <Text>{moment(detect.created_at.toString()).format('DD-MM-YYYY hh:MM')}</Text>
             </View>
             <View style={DetectDetails.ContentItem}>
-              <Text style={{ fontWeight: 'bold', fontSize: 18, marginBottom: 5 }}>Status</Text>
+              <Text style={{ fontWeight: 'bold', fontSize: 18, marginBottom: 5 }}>Image Processing Status</Text>
               <View style={{ flex: 1, flexDirection: 'row' }}>
                 <View style={{
                   width: 12,
